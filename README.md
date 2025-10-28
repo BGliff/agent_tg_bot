@@ -9,4 +9,4 @@
 
 Для запуска тестов:
 1) cd .\src
-2) pytest .\tests\test_weather_integration.py
+2) pytest .\tests
