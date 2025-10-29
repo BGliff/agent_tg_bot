@@ -10,3 +10,7 @@
 Для запуска тестов:
 1) cd .\src
 2) pytest .\tests
+
+Сборка и запуск Docker-контейнера
+1) docker build -t agent-tg-bot-image .
+2) docker run -d -p 443:443 agent-tg-bot-image python core.py
