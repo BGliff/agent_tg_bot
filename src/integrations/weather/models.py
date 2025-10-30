@@ -18,7 +18,7 @@ class WeatherDescription(BaseModel):
 
 
 class Wind(BaseModel):
-    speed: int
+    speed: float
 
 
 class WeatherSummary(BaseModel):
