@@ -34,7 +34,7 @@ class WeatherDataMocks:
             "temp_min": 8.05,
         },
         "wind": {
-            "speed": 4,
+            "speed": 4.1,
         },
     }
     INVALID_WEATHER_RESPONSE: dict[str, Any] = {}
@@ -45,7 +45,7 @@ class WeatherDataMocks:
         "Температура: 8.14\n"
         "Максимальная температура: 8.19\n"
         "Минимальная температура: 8.05\n"
-        "Ветер: 4 м/с"
+        "Ветер: 4.1 м/с"
     )
 
 
