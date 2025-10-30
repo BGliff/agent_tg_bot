@@ -1,3 +1,5 @@
+from pydantic import ValidationError
+
 from agent import tools
 from agent.llm_connection import llm
 from agent.chains import ask_llm
@@ -31,6 +33,8 @@ async def agent_main(message: str) -> str:
             )
         except BaseBotError as err:
             return str(err)
+        except ValidationError:
+            return await main_fallback(message)
     else:
         return await main_fallback(message)
 
